@@ -1,0 +1,30 @@
+{
+  "brand": {
+    "primary": "#6366f1",
+    "accent": "#8b5cf6",
+    "secondary": "#06b6d4"
+  },
+  "background": {
+    "canvas": "#fafafa",
+    "surface": "#ffffff",
+    "elevated": "#f8fafc",
+    "overlay": "rgba(0, 0, 0, 0.5)"
+  },
+  "text": {
+    "high": "#0f172a",
+    "medium": "#475569",
+    "muted": "#94a3b8",
+    "inverse": "#ffffff"
+  },
+  "border": {
+    "default": "#e2e8f0",
+    "muted": "#f1f5f9",
+    "focus": "#6366f1"
+  },
+  "status": {
+    "success": "#10b981",
+    "warning": "#f59e0b",
+    "danger": "#ef4444",
+    "info": "#3b82f6"
+  }
+}

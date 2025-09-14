@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  body {
+    /* Using standard Tailwind classes instead of custom tokens */
+    @apply bg-gray-50 text-slate-900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Touch-friendly tap targets */
+  button,
+  [role="button"] {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-indigo-500;
+  }
+}
+
+@layer components {
+  .canvas-container {
+    /* Using standard Tailwind classes */
+    @apply relative overflow-hidden bg-white rounded-lg border border-slate-200;
+    touch-action: pan-x pan-y pinch-zoom;
+  }
+
+  .brush-cursor {
+    pointer-events: none;
+    position: fixed;
+    border: 2px solid #6366f1;
+    border-radius: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+  }
+
+  .progress-bar {
+    /* Using standard Tailwind classes */
+    @apply w-full bg-slate-100 rounded-full h-2 overflow-hidden;
+  }
+
+  .progress-fill {
+    /* Using standard Tailwind classes */
+    @apply h-full bg-indigo-500 transition-all duration-300 ease-out;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

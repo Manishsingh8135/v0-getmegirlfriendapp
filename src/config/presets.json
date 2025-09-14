@@ -1,0 +1,35 @@
+[
+  {
+    "id": "photoreal",
+    "name": "Photorealistic",
+    "description": "Ultra-realistic photography style",
+    "parameters": {
+      "style": "photorealistic, high quality, detailed",
+      "negativePrompt": "cartoon, anime, painting, drawing, sketch, low quality, blurry",
+      "steps": 50,
+      "guidance": 7.5
+    }
+  },
+  {
+    "id": "studio",
+    "name": "Studio",
+    "description": "Professional studio photography",
+    "parameters": {
+      "style": "professional studio photography, perfect lighting, high resolution",
+      "negativePrompt": "amateur, poor lighting, low quality, grainy",
+      "steps": 40,
+      "guidance": 8.0
+    }
+  },
+  {
+    "id": "cartoon",
+    "name": "Cartoon",
+    "description": "Vibrant cartoon illustration",
+    "parameters": {
+      "style": "cartoon illustration, vibrant colors, clean lines, animated style",
+      "negativePrompt": "realistic, photographic, dark, gritty",
+      "steps": 30,
+      "guidance": 6.0
+    }
+  }
+]

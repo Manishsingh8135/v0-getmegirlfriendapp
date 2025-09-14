@@ -1,0 +1,35 @@
+[
+  {
+    "id": "add-girlfriend",
+    "name": "Add my girlfriend",
+    "description": "Add a beautiful girlfriend to your photos",
+    "promptTemplate": "Add a beautiful, photorealistic girlfriend to this image. She should look natural and fit seamlessly into the scene. {userPrompt}",
+    "preserveFaces": true,
+    "defaultAspect": "16:9",
+    "recommendedSize": "1024x576",
+    "strengthDefault": 0.7,
+    "category": "people"
+  },
+  {
+    "id": "studio-portrait",
+    "name": "Studio portrait",
+    "description": "Professional studio-quality portraits",
+    "promptTemplate": "Create a professional studio portrait with perfect lighting, sharp focus, and professional photography quality. {userPrompt}",
+    "preserveFaces": true,
+    "defaultAspect": "3:4",
+    "recommendedSize": "768x1024",
+    "strengthDefault": 0.8,
+    "category": "portrait"
+  },
+  {
+    "id": "cartoonize",
+    "name": "Cartoonize",
+    "description": "Transform into cartoon style",
+    "promptTemplate": "Transform this into a vibrant cartoon style with bold colors, clean lines, and animated character aesthetics. {userPrompt}",
+    "preserveFaces": false,
+    "defaultAspect": "1:1",
+    "recommendedSize": "1024x1024",
+    "strengthDefault": 0.9,
+    "category": "style"
+  }
+]
